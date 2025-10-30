@@ -1,0 +1,37 @@
+# TODO for Дурак Game Project
+
+- [x] Create package.json with dependencies (express, socket.io)
+- [x] Create server.js with WebSocket server, game logic, room management
+- [x] Create public/ directory
+- [x] Create public/index.html for game UI
+- [x] Create public/style.css for styling and animations
+- [x] Create public/client.js for client-side logic and socket handling
+- [x] Create public/assets/ directory
+- [x] Copy cards.png to public/assets/
+- [x] Copy Fon (1).png to public/assets/
+- [x] Copy primer.png to public/assets/
+- [x] Copy sticers.png to public/assets/
+- [x] Install dependencies via npm install
+- [x] Run server and test locally
+- [x] Verify animations, multiplayer functionality, security
+- [x] Sort hand by suit and value
+- [x] Remove class adds in updateUI for table
+- [x] Change hover translateY to -5px and spread to 3
+- [x] Change renderOpponent to fan
+- [x] Add canDefend and canTransfer functions
+- [x] Update click logic to use canDefend and canTransfer
+- [x] Add btn-ready and btn-surrender to index.html
+- [x] Remove players zone update
+- [x] Remove prompt for name
+- [x] Disable surrender button during game
+- [x] Update broadcastState to include deckCount and trumpCard
+- [x] Add restart event handler in server.js
+- [x] Add restart button to index.html
+- [x] Update client.js for deck display, restart button, and animations
+- [x] Fix restart button not working - added playerId persistence and rejoin logic
+- [x] Fix surrender button not working on page reload - implemented session persistence
+- [x] Fixed player identification in server.js methods throwIn, pass, beat to use socketId or id consistently
+- [x] Updated client.js to use myPlayerId instead of socket.id for player identity checks
+- [x] Adjusted client.js renderOpponent function to use myPlayerId for opponent detection
+- [x] Ensured consistent player id usage in client.js event handlers for card play actions
+- [x] Verified UI update logic for buttons and game state display in client.js

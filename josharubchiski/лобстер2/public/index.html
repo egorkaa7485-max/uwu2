@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Дурак Онлайн</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="background"></div>
+    <div id="deck-zone">
+      <div id="deck-count">Карт в колоде: 0</div>
+      <img id="deck-back" src="assets/CARDS/BACK.png" />
+      <img id="trump-card" />
+    </div>
+    <div id="game-info"></div>
+    <div id="messages"></div>
+    <div id="table-zone"></div>
+    <div id="players-zone"></div>
+    <div id="bito-pile"></div>
+    <div id="controls">
+      <button id="btn-take" disabled>Взять</button>
+      <button id="btn-pass" disabled>Пас</button>
+      <button id="btn-beat" disabled>Бито</button>
+      <button id="btn-surrender">Сдаться</button>
+      <button id="btn-restart" style="display:none">Перезапустить</button>
+    </div>
+    <div id="chat-container">
+      <div id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Введите сообщение..." />
+      <button id="chat-send">Отправить</button>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
