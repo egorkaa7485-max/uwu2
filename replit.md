@@ -12,13 +12,14 @@ A multiplayer gaming platform built with React, TypeScript, Vite, and Express. F
 
 ## Recent Changes (October 30, 2025)
 - Configured for Replit environment
-- Updated Vite to bind to `0.0.0.0:5000` for Replit proxy compatibility
-- Backend server configured to use `localhost:3001` 
+- Updated Vite to bind to `0.0.0.0:5000` with `allowedHosts: true` for Replit proxy compatibility
+- Backend server configured to run on port 3001 (accessible to all interfaces for deployment)
 - Set up concurrently to run both frontend and backend together
 - Created workflow for development server on port 5000
 - Fixed corrupted SQLite database by removing and recreating
 - Added comprehensive .gitignore files
 - Configured deployment settings for VM deployment
+- Resolved Vite host blocking issue by enabling allowedHosts
 
 ## Project Structure
 ```
